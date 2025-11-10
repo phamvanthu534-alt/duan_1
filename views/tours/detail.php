@@ -25,8 +25,6 @@
 
                 <h5>Đánh giá</h5>
                 <p>Điểm trung bình: <?= round($tour['average_rating'] ?? 0,1) ?> (<?= $tour['review_count'] ?? 0 ?> nhận xét)</p>
-                
-                <!-- List reviews -->
                 <?php if (!empty($reviews)) : ?>
                     <div class="mt-3">
                         <?php foreach ($reviews as $r) : ?>
